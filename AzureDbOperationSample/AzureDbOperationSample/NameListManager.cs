@@ -16,7 +16,7 @@ namespace AzureDbOperationSample
 
         public NameListManager()
         {
-            var client = new MobileServiceClient("http://xamarindbaccesssampleservice20170620053326.azurewebsites.net");
+            var client = new MobileServiceClient("URL");
             nameListTable = client.GetTable<NameList>();
         }
 
@@ -35,7 +35,7 @@ namespace AzureDbOperationSample
         public async Task<List<NameList>> GetIdAsync(string name)
         {
             List<NameList> items = await nameListTable
-            .Where(testTable01 => testTable01.Name == name)
+            .Where(nameListTable => nameListTable.Name == name)
             .ToListAsync();
 
             return items;
