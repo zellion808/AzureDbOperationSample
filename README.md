@@ -1,6 +1,6 @@
 # AzureDbOperationSample
 【Xamarin】AzureMobileAppsのEasy Tablesへのアプリからへの接続、操作のサンプル  
-EasyTables以外（自前のSQLDB）は操作できません
+EasyTables以外（自前のSQLDB等）は操作できません
 
 # 手順（備忘録）
 1　あらかじめAzureでSQLサーバ、データベースを作成する（Azureポータル）  
